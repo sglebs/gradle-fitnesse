@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
+
+mainClassName = 'fitnesseMain.FitNesseMain'
+applicationDefaultJvmArgs = [
+  '-Duser.language=pt',
+  '-Duser.country=BR',
+  '-Duser.timezone=America/Sao_Paulo'
+]
+
+
+
+dependencies {
+    compile 'com.github.andreptb:fitnesse-jdbc-slim:0.0.2'
+    compile 'com.github.andreptb:fitnesse-selenium-slim:0.2.0'
+    compile 'com.xebia.incubator:xebium:0.12'
+    //compile 'com.xebia.incubator:xebium:0.15-SNAPSHOT-mqm'
+    //compile 'nl.hsac:hsac-fitnesse-fixtures:1.10.15'
+    //compile 'nl.hsac:hsac-xebium-bridge:0.1.7'
+    //compile 'nl.hsac:hsac-fitnesse-plugin:1.11.1'
+    compile 'smartrics.restfixture:smartrics-RestFixture:4.0'
+    //compile 'smartrics.restfixture:smartrics-RestFixture:3.1b-mqm-SNAPSHOT'
+    compile 'com.xebia.fitnesse.slim.soap:fitnesse-slim-soap-driver:0.1-SNAPSHOT'
+    //compile 'net.betterdeveloper:BetDevFitNesse:0.0.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
