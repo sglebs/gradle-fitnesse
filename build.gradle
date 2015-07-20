@@ -19,6 +19,7 @@ applicationDefaultJvmArgs = [
 
 dependencies {
     compile 'com.github.andreptb:fitnesse-jdbc-slim:0.0.2'
+    compile 'org.xerial:sqlite-jdbc:3.8.10.1'
     compile 'com.github.andreptb:fitnesse-selenium-slim:0.2.0'
     compile 'com.xebia.incubator:xebium:0.12'
     //compile 'com.xebia.incubator:xebium:0.15-SNAPSHOT-mqm'
