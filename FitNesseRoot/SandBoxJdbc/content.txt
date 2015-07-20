@@ -1,0 +1,20 @@
+!define TEST_SYSTEM {slim} 
+
+!***> classpath config 
+!path ${java.class.path}
+
+***!
+
+!2 Bases
+
+!define jdbcBase {jdbc:sqlite://Users/mqm/git/betdev-fitnesse/Chinook_Sqlite_AutoIncrementPKs.sqlite}
+!define jdbcDriver {org.sqlite.JDBC}
+!define jdbcUsername {abc}
+!define jdbcPassword {mypassword}
+
+
+|library|
+|jdbc fixture|
+
+| script |
+|connect jdbc on | MYDATABASE | with url | ${jdbcBase} | and driver | ${jdbcDriver} | and username | ${jdbcUsername} | and password | ${jdbcPassword} | 
