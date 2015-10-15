@@ -30,7 +30,7 @@ dependencies {
     //compile 'nl.hsac:hsac-fitnesse-plugin:1.11.1'
     compile 'smartrics.restfixture:smartrics-RestFixture:4.0'
     //compile 'smartrics.restfixture:smartrics-RestFixture:3.1b-mqm-SNAPSHOT'
-    compile 'com.xebia.fitnesse.slim.soap:fitnesse-slim-soap-driver:0.1-SNAPSHOT'
+    //compile 'com.xebia.fitnesse.slim.soap:fitnesse-slim-soap-driver:0.1-SNAPSHOT'
     //compile 'net.betterdeveloper:BetDevFitNesse:0.0.1'
 }
 
